@@ -1,6 +1,6 @@
 # Toutiao Scraper
 
-![Toutiao Scraper: news articles, videos, comments and the hot board (热榜) without login](https://raw.githubusercontent.com/smoldesk/apify-scrapers/main/assets/toutiao/banner.png)
+![Toutiao Scraper: news articles, videos, comments and the hot board (热榜) without login](https://raw.githubusercontent.com/smoldesk/apify-scrapers/main/assets/toutiao/banner.webp)
 
 Scrape Toutiao (今日头条) news search, comments and the hot board (热榜). No login, no cookies, no API key. Runs on [Apify](https://apify.com/smoldesk/toutiao-scraper).
 

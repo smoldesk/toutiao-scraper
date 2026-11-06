@@ -122,4 +122,4 @@ Yes. Schedule a run every hour with `"trending": true` and compare `rank` and `h
 
 ## More scrapers
 
-Toutiao is one of 15 no-login scrapers by Smoldesk Studios. See the full list: [smoldesk/apify-scrapers](https://github.com/smoldesk/apify-scrapers).
+Toutiao is one of 17 no-login scrapers by Smoldesk Studios. See the full list: [smoldesk/apify-scrapers](https://github.com/smoldesk/apify-scrapers).

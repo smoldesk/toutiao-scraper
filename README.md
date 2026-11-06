@@ -32,6 +32,8 @@ curl -X POST "https://api.apify.com/v2/acts/smoldesk~toutiao-scraper/run-sync-ge
   }'
 ```
 
+Ready-made tasks on Apify: [Monitor a brand on Toutiao (news + 微头条 posts, new only)](https://apify.com/smoldesk/toutiao-scraper/examples/toutiao-brand-monitoring) · [微头条 posts + comments for sentiment research](https://apify.com/smoldesk/toutiao-scraper/examples/toutiao-posts-comments-sentiment) · [Toutiao hot board (头条热榜), top 50](https://apify.com/smoldesk/toutiao-scraper/examples/toutiao-hot-board).
+
 Get the hot board only: `{"trending": true}`. Posts only: `{"searchQueries": ["瑞幸咖啡"], "searchType": "posts"}`.
 
 ## Sample output

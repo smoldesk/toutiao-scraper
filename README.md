@@ -86,7 +86,7 @@ Pay per result. No monthly fee.
 | Result | Per 1,000 |
 |---|---|
 | Article or video | $2 |
-| 微头条 post | $4 (free until 20 Nov 2026) |
+| 微头条 post | $4 |
 | Comment or reply | $1 |
 | Hot-board topic | $1 |
 

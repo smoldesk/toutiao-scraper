@@ -83,14 +83,15 @@ Export as JSON, CSV or Excel, or pipe it into Google Sheets, Make, Zapier or n8n
 
 ## Pricing
 
-Pay per result. No monthly fee.
+Pay per result. No monthly fee. Prices drop on paid Apify plans.
 
-| Result | Per 1,000 |
-|---|---|
-| Article or video | $2 |
-| 微头条 post | $4 |
-| Comment or reply | $1 |
-| Hot-board topic | $1 |
+| Result (per 1,000) | Free | Starter | Scale | Business |
+|---|---|---|---|---|
+| Article or video | $2.00 | $2.00 | $1.75 | $1.50 |
+| 微头条 post | $4.00 | $4.00 | $3.50 | $3.00 |
+| Comment or reply | $1.00 | $1.00 | $0.90 | $0.75 |
+| Hot-board topic | $1.00 | $1.00 | $0.90 | $0.75 |
+
 
 ## Limits
 

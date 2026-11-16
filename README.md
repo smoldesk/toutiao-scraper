@@ -2,12 +2,14 @@
 
 ![Toutiao Scraper: news articles, videos, comments and the hot board (热榜) without login](https://raw.githubusercontent.com/smoldesk/apify-scrapers/main/assets/toutiao/banner.webp)
 
-Scrape Toutiao (今日头条) news search, 微头条 short posts, comments and the hot board (热榜). No login, no cookies, no API key. Runs on [Apify](https://apify.com/smoldesk/toutiao-scraper).
+Scrape Toutiao (今日头条) news search, full article text, 微头条 short posts, comments and the hot board (热榜). No login, no cookies, no API key. Runs on [Apify](https://apify.com/smoldesk/toutiao-scraper).
 
 ## What you get
 
 - **Keyword news search** in Chinese (or English brand names), within a date range. About 100 results per keyword.
 - **Articles and videos**: title, summary, publish time, author and verification, reads, plays, likes, comments, shares, saves, cover image and Toutiao's content categories.
+- **Full article text** (`"includeFullText": true`): the complete article body as plain text and Markdown (headings and image links kept), character count, original-content flag and the author's follower count. Charged only when the text was found.
+- **Article and video links** (`"articleDetails": true`): details, counts and (with full text on) the body for any list of Toutiao links.
 - **微头条 posts** (`"searchType": "posts"` or `"both"`): Toutiao's Weibo-style short posts with full text, images, hashtags, links, author and verification, reads, likes, comments and shares.
 - **Comments and replies** for search results or any article, video or post link: text, likes, author and province.
 - **Hot board (热榜)**: rank, topic, heat score, label, image and link. Schedule it hourly to track a story.
@@ -88,6 +90,7 @@ Pay per result. No monthly fee. Prices drop on paid Apify plans.
 | Result (per 1,000) | Free | Starter | Scale | Business |
 |---|---|---|---|---|
 | Article or video | $2.00 | $2.00 | $1.75 | $1.50 |
+| Full article text (add-on, only when found) | +$2.00 | +$2.00 | +$1.75 | +$1.50 |
 | 微头条 post | $4.00 | $4.00 | $3.50 | $3.00 |
 | Comment or reply | $1.00 | $1.00 | $0.90 | $0.75 |
 | Hot-board topic | $1.00 | $1.00 | $0.90 | $0.75 |
@@ -95,7 +98,7 @@ Pay per result. No monthly fee. Prices drop on paid Apify plans.
 
 ## Limits
 
-- No full article body. Toutiao guards article pages with a browser check, so you get title, summary, counts and link.
+- Full text is for articles: videos have no body. Deleted or private articles give no text and aren't charged.
 - About 100 results per keyword and tab, fewer with a date range. Split long periods into weeks.
 - Post search ignores dates on Toutiao's side, so the scraper filters posts by date itself (skipped posts aren't charged).
 - A few very broad brand names (比亚迪, sometimes 华为) are captcha-gated for logged-out visitors and get skipped without charge. Use a more specific keyword (比亚迪汽车, 华为手机).
